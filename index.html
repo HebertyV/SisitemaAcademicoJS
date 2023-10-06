@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Acadêmico - IFPB</title>
+</head>
+<body>
+<h1>Formulário de alunos</h1>
+Nome:<input id="nome"><br>
+Idade:<input id="idade" type="number"><br>
+Matrícula:<input id="matricula"><br>
+<button onclick="controlador.inserir()">Cadastrar</button>
+<button onclick="controlador.listarAlunosMenoresIdade()">Mostrar Menores</button>
+
+<h1>Formulário de disciplinas</h1>
+Nome:<input id="nomeDisciplina"><br>
+Carga Horária:<input id="cargaHoraria"><br>
+Código:<input id="Codigo"><br>
+<button onclick="controladorDisciplina.inserirDisciplina()">Cadastrar</button>
+
+<h1>Listagem de alunos</h1>
+<ol id="listaAlunos"></ol>
+<ul id="listaAlunosMenores"></ul>
+
+<h1>Listagem de Disciplinas</h1>
+<ul id="listaDisciplinas"></ul>
+
+<script src="modelo/aluno.js"></script>
+<script src="repositorio/aluno_repositorio.js"></script>
+<script src="servico/aluno_service.js"></script>
+<script src="controlador/aluno_controlador.js"></script>
+
+<script src="modelo/disciplina.js"></script>
+<script src="repositorio/disciplina_repositorio.js"></script>
+<script src="servico/disciplina_service.js"></script>
+<script src="controlador/disciplina_controlador.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
